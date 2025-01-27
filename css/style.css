@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Libre Franklin", serif;
+}
+.container{
+    width: 60%;
+    margin: 40px auto;
+    
+}
+.container .header{
+    text-align: center;
+}
+.container .header img{
+    margin-bottom: 50px;
+}
+.container .header h2{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: normal;
+    color: hsl(0, 0%, 59%);
+}
+.container .header h2 span{
+    font-weight: bold;
+    color: hsl(209, 33%, 12%);
+    
+}
+.container .header p{
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+}
+.input{
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    position: relative;
+}
+.input form .email{
+    padding: 12px 20px;
+    width: 50%;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid hsl(223, 100%, 88%) ;
+    margin-bottom: 50px;
+}
+.input form .submit{
+    padding: 12px;
+    width: 15%;
+    border-radius: 25px;
+    margin-left: 15px;
+    color: white;
+    border: 2px solid hsl(223, 87%, 63%) ;
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+    box-shadow: 0px 9px 17px -8px hsl(223, 100%, 88%);
+}
+.input form .submit:hover{
+    transition: .3s;
+    background-color: hsla(223, 87%, 63%, 0.877);
+    border: 2px solid hsla(223, 87%, 63%, 0.877) ;
+}
+.input  span{
+    font-size: 13px;
+    position: absolute;
+    bottom: 36%;
+    left: 21%;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    display: none;
+}
+.dashboard {
+    margin-bottom: 50px;
+}
+.dashboard  img{
+    width: 100%;
+}
+.footer{
+    text-align: center;
+}
+.footer .icon{
+    margin-bottom: 20px;
+}
+.footer .icon i{
+    margin: 0 2px;
+    color: hsl(223, 87%, 63%);
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid hsl(223, 100%, 88%);    
+}
+.footer .icon i:hover{
+    color: white ;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;  
+    transition: .3s;
+}
+.footer .icon .fa-facebook-f{
+    padding: 6px 9px;
+}
+.footer span{
+    color: hsl(223, 100%, 88%) ;
+}
+
+
+@media(max-width:375px){
+    .container{
+        width: 80%;
+        margin: 80px auto 30px auto;
+        
+    }
+    .container .header h2{
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+    .container .header p{
+        font-size: 16px;
+    }
+    .input form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input form .email{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .input form .submit{
+        width: 100%;
+        margin-left: 0;
+    }
+    .input  span{
+        font-size: 12px;
+        top: 68px;
+        left: 17%;
+    }
+}
